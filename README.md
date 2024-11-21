@@ -1,6 +1,6 @@
-# blank
+# Global News
 
-blank
+Website build with Next js and Payload CMS
 
 ## Attributes
 

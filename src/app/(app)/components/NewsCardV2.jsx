@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Clock } from 'lucide-react'
-import { FormatDate } from '../utils/utils'
+// import { FormatDate } from '../utils/utils'
 
 export default function NewsCardV2({ articleData }) {
   return (
@@ -22,7 +22,7 @@ export default function NewsCardV2({ articleData }) {
         <div className="flex items-center gap-4 text-gray-500 text-sm">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <span>{FormatDate(articleData.date)}</span>
+            {/* <span>{FormatDate(articleData.date)}</span> */}
           </div>
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4" />

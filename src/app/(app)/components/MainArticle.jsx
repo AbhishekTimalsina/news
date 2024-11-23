@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FormatDate } from '../utils/utils'
+// import { FormatDate } from '../utils/utils'
 import { ChevronRight } from 'lucide-react'
 
 export default function MainArticle({ articleData }) {
-  const formattedDate = FormatDate(articleData.date)
+  // const formattedDate = FormatDate(articleData.date)
 
   return (
     <article className="space-y-4">
@@ -35,7 +35,7 @@ export default function MainArticle({ articleData }) {
               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          <span>{formattedDate}</span>
+          {/* <span>{formattedDate}</span> */}
         </div>
         <div className="flex items-center gap-2">
           <svg

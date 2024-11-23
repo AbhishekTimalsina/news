@@ -30,6 +30,10 @@ export default async function Home() {
   })
   latestNews = latestNews.docs
 
+  if (!breakingNews?.docs || breakingNews.totalPages == 0) {
+    return <div>Loading ...</div>
+  }
+
   return (
     <main className="container mx-auto py-4 px-10 space-y-10">
       <section className=" grid gap-8 lg:grid-cols-[1fr_400px]">

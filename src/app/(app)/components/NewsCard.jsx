@@ -7,7 +7,7 @@ export default function NewsCard({ id, title, summary, photo, date, paragraphs }
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
       <Image
-        src={photo.url}
+        src={photo?.url}
         alt={title}
         width={200}
         height={400}
@@ -24,7 +24,7 @@ export default function NewsCard({ id, title, summary, photo, date, paragraphs }
           </div>
         </div>
         <h2 className="text-xl font-bold mb-2 line-clamp-2">{title}</h2>
-        <p className="text-gray-600 mb-4 line-clamp-3">{paragraphs[0].text}</p>
+        <p className="text-gray-600 mb-4 line-clamp-3">{paragraphs[0]?.text}</p>
         <Link
           href={`/article/${id}`}
           className="inline-flex items-center text-blue-600 hover:text-blue-700"
